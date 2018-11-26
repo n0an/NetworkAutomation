@@ -1,0 +1,9 @@
+create table NetworkDevices (Hostname VARCHAR(30), MACAddr VARCHAR(20) PRIMARY KEY, Vendor VARCHAR(10), Model VARCHAR(10), Image VARCHAR(50), IOSVersion VARCHAR(20), SerialNo VARCHAR(30), Uptime INT, CPUModel VARCHAR(20), CPUSpeed VARCHAR(10), SerialIntfNo INT, CiscoNeighbors VARCHAR(200), IntRoutingPro VARCHAR(30), ExtRoutingPro VARCHAR(30));
+
+create table CPUUtilization (NetworkCPUUtilizationPercent FLOAT(6,2), Top3CPUDevices VARCHAR(50), PollTimestamp VARCHAR(25));
+
+create table ProcMemUtilization (NetworkProcMemUtilizationPercent FLOAT(6,2), Top3ProcMemDevices VARCHAR(50), PollTimestamp VARCHAR(25));
+
+create table IOMemUtilization (NetworkIOMemUtilizationPercent FLOAT(6,2), Top3IOMemDevices VARCHAR(50), PollTimestamp VARCHAR(25));
+
+create table UPEthInterfaces (NetworkUPEthIntfPercent FlOAT(6,2), Top3UPEthIntf VARCHAR(50), PollTimestamp VARCHAR(25));

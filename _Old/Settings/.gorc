@@ -1,0 +1,16 @@
+[init_commands]
+juniper:
+    set cli timestamp
+    show interfaces terse vlan.0
+    show system users
+
+cisco:
+    show clock
+    show ip interface brief
+    terminal width 132
+
+arista:
+    show clock
+    show uptime
+    show ip interface brief
+
